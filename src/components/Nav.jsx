@@ -4,7 +4,7 @@ import {shoe8} from '../assets/images';
 import { navLinks } from '../constants/index';
 const Nav = () => {
   return (
-    <header className='padding-x py-8 absolute z-10 w-full '>
+    <header className='padding-x py-8 absolute z-10 w-full bg-white'>
         <nav className='flex justify-between items-center max-container'>
             <a href="">
                 <img 

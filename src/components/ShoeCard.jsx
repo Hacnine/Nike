@@ -1,13 +1,17 @@
 import React from "react";
 
 const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImage }) => {
-
-const handleClick = () =>{
-  if(bigShoeImage !== imgURL.bigShoe){
-    changeBigShoeImage(imgURL.bigShoe);
-    console.log('bigShoeImage:', bigShoeImage, 'imgURL.bigShoe:', imgURL.bigShoe)
-  }
-}
+  const handleClick = () => {
+    if (bigShoeImage !== imgURL.bigShoe) {
+      changeBigShoeImage(imgURL.bigShoe);
+      console.log(
+        "bigShoeImage:",
+        bigShoeImage,
+        "imgURL.bigShoe:",
+        imgURL.bigShoe
+      );
+    }
+  };
 
   return (
     <div
@@ -16,12 +20,11 @@ const handleClick = () =>{
     bigShoeImage === imgURL.bigShoe ? "border-coral-red" : "border-transparent"
   } cursor-pointer
 `}
-onClick={handleClick}
+      onClick={handleClick}
     >
       <div>
-         <img src={imgURL.thumbnail} alt="" />
-       </div>
-      
+        <img src={imgURL.thumbnail} alt="" />
+      </div>
     </div>
   );
 };
